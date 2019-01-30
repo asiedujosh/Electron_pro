@@ -1,0 +1,132 @@
+<div id = "container">
+        <h4>The Answers for Pearson Correlation Problem</h4>
+        <hr>
+        <ul class = "ulist">
+        <li class = "list">The sum of X = {{xr}}</li>
+        <li class = "list">The sum of Y = {{yr}}</li>
+        <li class = "list">The sum of X<sup>2</sup> = {{xx}}</li>
+        <li class = "list">The sum of Y<sup>2</sup> = {{yy}}</li>
+        <li class = "list">The sum of XY = {{xy}} </li>
+        <li class = "list">The gradient (M) = {{twelve}}</li>
+        <li class = "list">{{thirteen}} </li>
+        <button type = "button"  ng-click = "solve()">Show work</button>
+        </ul>
+
+        <!--
+        <p>The values of X </p>
+        <input type = "text" value = "{{a}}" />
+        <input type = "text" value = "{{c}}" />
+        <input type = "text" value = "{{e}}" />
+        <input type = "text" value = "{{g}}" />
+        <input type = "text" value = "{{i}}" />
+        <input type = "text" value = "{{k}}" />
+        <input type = "text" value = "{{m}}" />
+        <input type = "text" value = "{{o}}" />
+        <input type = "text" value = "{{q}}" />
+        <input type = "text" value = "{{s}}" />
+        <input type = "text" value = "{{u}}" />
+        <input type = "text" value = "{{w}}" />
+        <input type = "text" value = "{{y}}" /> 
+        SumΣX = {{xr}}
+            
+        <hr>
+        <p>The values of Y</p>
+        <input type = "text" value = "{{b}}" />
+        <input type = "text" value = "{{d}}" />
+        <input type = "text" value = "{{f}}" />
+        <input type = "text" value = "{{h}}" />
+        <input type = "text" value = "{{j}}" />
+        <input type = "text" value = "{{l}}" />
+        <input type = "text" value = "{{n}}" />
+        <input type = "text" value = "{{p}}" />
+        <input type = "text" value = "{{r}}" />
+        <input type = "text" value = "{{t}}" />
+        <input type = "text" value = "{{v}}" />
+        <input type = "text" value = "{{x}}" />
+        <input type = "text" value = "{{z}}" /> 
+        SumΣY = {{yr}}
+        <hr>
+        <button type = "button"  ng-click = "solve()">Show work</button>
+        {{water}}
+                        Solution
+        <p>The values of X<sup>2</sup> </p>
+        <input type = "text" value = "{{a * a}}" />
+        <input type = "text" value = "{{c * c}}" />
+        <input type = "text" value = "{{e * e}}" />
+        <input type = "text" value = "{{g * g}}" />
+        <input type = "text" value = "{{i * i}}" />
+        <input type = "text" value = "{{k * k}}" />
+        <input type = "text" value = "{{m * m}}" />
+        <input type = "text" value = "{{o * o}}" />
+        <input type = "text" value = "{{q * q}}" />
+        <input type = "text" value = "{{s * s}}" />
+        <input type = "text" value = "{{u * u}}" />
+        <input type = "text" value = "{{w * w}}" />
+        <input type = "text" value = "{{y * y}}" /> 
+        SumΣX<sup>2</sup> = {{xx}}
+        <hr>
+        <p>The values of Y<sup>2</sup> </p>
+        <input type = "text" value = "{{b * b}}" />
+        <input type = "text" value = "{{d * d}}" />
+        <input type = "text" value = "{{f * f}}" />
+        <input type = "text" value = "{{h * h}}" />
+        <input type = "text" value = "{{j * j}}" />
+        <input type = "text" value = "{{l * l}}" />
+        <input type = "text" value = "{{n * n}}" />
+        <input type = "text" value = "{{p * p}}" />
+        <input type = "text" value = "{{r * r}}" />
+        <input type = "text" value = "{{t * t}}" />
+        <input type = "text" value = "{{v * v}}" />
+        <input type = "text" value = "{{x * x}}" />
+        <input type = "text" value = "{{z * z}}" /> 
+        SumΣY<sup>2</sup> = {{yy}}
+        <hr>
+        <p>The values of xy </p>
+        <input type = "text" value = "{{a * b}}" />
+        <input type = "text" value = "{{c * d}}" />
+        <input type = "text" value = "{{e * f}}" />
+        <input type = "text" value = "{{g * h}}" />
+        <input type = "text" value = "{{i * j}}" />
+        <input type = "text" value = "{{k * l}}" />
+        <input type = "text" value = "{{m * n}}" />
+        <input type = "text" value = "{{o * p}}" />
+        <input type = "text" value = "{{q * r}}" />
+        <input type = "text" value = "{{s * t}}" />
+        <input type = "text" value = "{{u * v}}" />
+        <input type = "text" value = "{{w * x}}" />
+        <input type = "text" value = "{{y * z}}" /> 
+        SumΣXY = {{xy}}
+        <hr>
+        
+        <p>Total number of variables(n) = {{tt}}</p>
+        <span style = "float: left; margin-left: 150px;">m =</span> 
+        <span style = "float: left; margin-left: 120px;">(n)&times;(Σ(XY)) - (ΣX)(ΣY)</span><br/>&radic;<span style = "text-decoration: overline;">(((n)&times;(ΣX<sup>2</sup>) - (ΣX)(ΣX))&times;((n)&times;(ΣY<sup>2</sup>) - (ΣY)(ΣY)))</span><br/><br/>
+        <span style = "float: left; margin-left: 150px;">m =</span> 
+        <span style = "float: left; margin-left: 120px;">({{tt}}&times;{{xy}}) - ({{xr}}&times;{{yr}})</span><br/><span style = "text-decoration: overline;">&radic;<span style = "text-decoration: overline;">((({{tt}}*{{xx}})
+            - ({{xr}}&times;{{xr}}))(({{tt}}&times;{{yy}}) - ({{yr}}&times;{{yr}})))</span></span> <br/>
+
+            {{one}} - {{two}}</span><br/><span style = "text-decoration: overline;">&radic;<span style = "text-decoration: overline;">((({{three}})
+                - ({{four}}))(({{five}}) - ({{six}})))</span></span> <br/>
+           
+                {{seven}}<br/><span style = "text-decoration: overline;">&radic;<span style = "text-decoration: overline;"></span>
+                (({{eight}})&times;({{nine}})) </span><br/>
+
+                {{seven}}<br/><span style = "text-decoration: overline;">&radic;<span style = "text-decoration: overline;"></span>
+                ({{ten}}) </span><br/>
+
+                {{seven}}<br/><span style = "text-decoration: overline;"><span style = "text-decoration: overline;"></span>
+                {{eleven}} </span><br/>
+                m = {{twelve}} <br/>
+                {{thirteen}}
+
+            -->
+                   
+        </div>
+        
+        
+
+
+        
+
+        
+    

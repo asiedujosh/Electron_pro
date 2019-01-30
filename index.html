@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SFC</title>
+    <link rel = "stylesheet" href = "style.css"/>
+
+    
+	<link  href = "assets/css/bootstrap.min.css" rel = "stylesheet" />
+    <link  href = "assets/css/style.css" rel = "stylesheet" />
+    <script src = "assets/js/jquery-3.3.1.min.js"></script>
+	<script src = "assets/js/bootstrap.min.js"></script>
+	<script src = "app/lib/angular.min.js"></script>
+    <script src = "app/lib/angular-route.min.js"></script>
+    <script src = "assets/js/angular-animate.min.js"></script>
+
+</head>
+<body>
+        <div id = "content" ng-controller = "headCtrl">
+
+        <header>
+        <div class="option" ng-click = "close()">&#x2716;</div>
+        <div class="option" ng-click = "">&#x1f5d6;</div>
+        <div class="option" ng-click = "minimize()">&#x1f5d5;</div>
+        </header>
+    
+        <div class = "container">
+            <div class = "row">
+                <div class = "col-md-12 well" >
+                    MidNyt IPMC SFC Maths
+                </div>
+            </div>
+            <div class = "row">
+                <div class = "col-md-3 well">
+                <ul>
+                    <li><a href = '#!/'>Home</a></li>
+                    <li><a href = '#!/second-msg'>Linear Regression</a></li>
+                    <li><a href = '#!/third-msg'>Pearson Correlation</a></li>
+                </ul><br/>
+                <hr>
+                <ul>
+                    <li><a href = '#!/note'>Notes on Correlation</a></li>
+                    <li><a href = '#!/contact'>Contact</a></li>
+                    <li><a href = '#!/about'>About</a></li>
+                </ul>
+            </div>
+            <div class = "col-md-9 well">
+                <main ng-view></main>
+            </div>
+            </div>
+            </div>
+    </div>
+    <script src = "stuff.js"></script>
+</body>
+</html>
